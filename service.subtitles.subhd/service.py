@@ -137,7 +137,8 @@ def Download(url,lang):
         para = urllib.urlencode(values)
         data = GetHttpData(url, para)
         match = re.compile('"url":"([^"]+)"').search(data)
-        url = match.group(1).replace(r'\/','/').decode("unicode-escape").encode('utf-8')
+        url2 = match.group(1).replace(r'\/','/').decode("unicode-escape").encode('utf-8')
+        url='http://subhd.com'+url2
         data = GetHttpData(url)
     except:
         return []
