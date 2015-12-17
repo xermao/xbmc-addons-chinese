@@ -1,4 +1,6 @@
-﻿1.0.5
+1.0.6
+-update for web return downloadurl changes
+1.0.5
 - fixed can't remove temp dir under android
 
 1.0.4
